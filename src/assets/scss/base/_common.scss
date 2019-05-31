@@ -1,0 +1,121 @@
+*, *:after, *:before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  cursor: default;
+
+  font-size: 18px;
+  font-family: $font;
+  color: $color;
+  font-weight: 300;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 300;
+}
+
+h2 {
+  display: flex;
+  align-items: center;
+
+  &:before {
+    content: '';
+    display: inline-block;
+
+    width: 1px;
+    height: 32px;
+    margin-right: 8px;
+
+    background-color: $primary-color-dark;
+  }
+}
+
+a {
+  display: inline;
+
+  color: $primary-color-dark;
+  text-decoration: none;
+
+  border-bottom: 1px dashed $primary-color;
+
+  transition: 0.1s ease-out;
+
+  &:hover {
+    border-bottom-color: rgba($primary-color, 0)
+  }
+}
+
+
+.primary {
+  color: $primary-color-dark;
+}
+
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 8px;
+
+  font-size: 18px;
+  font-weight: 300;
+
+  border-radius: 3px;
+  border: 1px solid #ddd;
+
+  transition: 0.1s ease-out;
+
+  @extend .placeholder;
+
+  &:hover, &:focus {
+    outline: none;
+  }
+
+  &:hover, &:focus {
+    border-color: $primary-color;
+  }
+}
+
+
+.placeholder {
+  &::-webkit-input-placeholder {
+    color: $color-placeholder;
+  }
+
+  &::-moz-placeholder {
+    color: $color-placeholder;
+  }
+
+  /* Firefox 19+ */
+  &:-moz-placeholder {
+    color: $color-placeholder;
+  }
+
+  /* Firefox 18- */
+  &:-ms-input-placeholder {
+    color: $color-placeholder;
+  }
+}
+
+.btn {
+  padding: 0 16px;
+
+  color: white;
+  line-height: 48px;
+
+  border: 1px solid $primary-color;
+  border-radius: 3px;
+  background-color: $primary-color;
+
+  transition: 0.1s ease-out;
+
+  cursor: pointer;
+
+  &:hover {
+    opacity: .8;
+  }
+}

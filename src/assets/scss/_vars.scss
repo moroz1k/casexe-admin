@@ -1,0 +1,11 @@
+$font: 'Open Sans', sans-serif;
+
+$primary-color: #99f;
+$primary-color-light: lighten($primary-color, 10%);
+$primary-color-lighten: lighten($primary-color, 15%);
+$primary-color-dark: darken($primary-color, 10%);
+$primary-color-darkest: darken($primary-color, 55.001%);
+$primary-color-middle-dark: darken(desaturate($primary-color, 66.96), 25.10);
+
+$color: #333;
+$color-placeholder: rgba($color, 0.5);
