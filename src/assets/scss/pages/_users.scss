@@ -1,0 +1,25 @@
+.users {
+
+  &-list {
+
+    &-item {
+      margin-bottom: 24px;
+
+      display: flex;
+      align-items: center;
+
+      div + div {
+        margin-left: 16px;
+      }
+
+      &-photo {
+        width: 36px;
+        height: 36px;
+
+        background: transparent no-repeat center/cover;
+
+        border-radius: 50%;
+      }
+    }
+  }
+}
